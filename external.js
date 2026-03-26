@@ -134,3 +134,27 @@ if (age <18 || isStudent) {
     }   else{
         console.log("Grade F");
     }           
+
+
+    //concatenation ... Joining things together
+    // using the + operator
+    let firstName = "Mercylina";
+    let lastName = "Muthoni";
+    let fullName = firstName + " " + lastName;
+    console.log(fullName);
+
+    //concatenating strings and numbers 
+    let ages = 25;
+    let message = "I am " + ages + " years old.";
+    console.log(message);
+
+    //template literals
+    //uses backticks `` and ${} for variables instead of quotes
+    let name1 = "Mercylina";
+    let age1 = 25;
+    let message1 = `My name is ${name1} and I am ${age1} years old.`;
+    console.log(message1);
+
+    //string methods
+    let str = "Hello World";
+    console.log(str.length);
