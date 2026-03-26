@@ -51,3 +51,26 @@ console.log(fruits.length); // Getting the length of the array
 
 //symbol
 const x = Symbol();
+
+
+//CONDITIONAL STATEMENTS
+//Alllows us to execute a block of code based on a condition
+
+if(age > 18){
+    console.log("You are an adult");
+}
+
+if(age<18){
+    console.log("You are a minor");
+}
+else{
+    console.log("Dont take wine");
+}
+
+//multiple conditions
+let score = 85;
+if (score >=90) {
+    console.log("Grade A");
+} else if(score >=80){
+    console.log("Grade B");
+}
