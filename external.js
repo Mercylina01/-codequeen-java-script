@@ -1,3 +1,4 @@
+name = "Mercylina";
 console.log("My name is Mercylina");
 
 //Declaring variables
@@ -45,6 +46,10 @@ console.log(person);
 
 //array
 let fruits = ["Apple", "Banana", "Orange"];
+let numbers = [1 , 2, 3, 4, 5];
+let mixedarray = ["Hello", 42, true, null];
+console.log(mixedarray[2]); // Accessing the third element of the array
+console.log(numbers[-1]); // Accessing the last element of the array
 console.log(fruits);
 console.log(fruits[0]); // Accessing the first element of the array
 console.log(fruits.length); // Getting the length of the array
@@ -68,9 +73,64 @@ else{
 }
 
 //multiple conditions
-let score = 85;
-if (score >=90) {
+let scores = 85;
+if (scores >=90) {
     console.log("Grade A");
-} else if(score >=80){
+} else if(scores >=80){
     console.log("Grade B");
 }
+
+// comparrison operators
+// >    greater than
+// <   less than
+// >=   greater or equal
+// <=   less or equal
+// ==   equal (not strict)
+// ===  strictly equal (BEST to use)
+// !=  not equal
+
+
+//logical operators
+// &&  AND
+if(age > 18 && age < 30){
+
+    console.log("You are a young adult");
+}
+
+if(age <18 && isStudent){
+    console.log("Eligible");
+
+}
+
+// || OR
+//one must be true
+if (age <18 || isStudent) {
+    console.log("Discount applies");}
+
+
+    //NOT operator
+    //negates the condition
+    if(!isStudent){
+        console.log("You are not a student");
+    }
+
+    //Alevel grading system
+    let score =  99;
+    if(score>=90){
+        console.log("Grade A"); 
+
+    }else if(score>=80){
+        console.log("Grade B");
+    }
+    else if(score>=70){
+        console.log("Grade C");
+    }  else if(score>=60){
+        console.log("Grade D");
+    }   else if(score>=50){
+        console.log("Grade E");
+    }
+    else if(score>=40){
+            console.log("Grade O");
+    }   else{
+        console.log("Grade F");
+    }           
