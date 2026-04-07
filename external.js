@@ -158,3 +158,39 @@ if (age <18 || isStudent) {
     //string methods
     let str = "Hello World";
     console.log(str.length);
+
+    //arrays
+    let Scores = [
+        {name: "Mercylina", score: 85},
+        {name: "lina", score: 90},
+        {name: "Mercy", score: 95},
+        {name: "Muthoni", score: 80}
+    ];
+    //call back function to print the scores
+    Scores.forEach(student => {
+        let grade;
+        if (student.score >=90) {
+            grade = "A";
+        } else if(student.score >=80){
+            grade = "B";
+        }
+    })
+
+    //functions are reusable blocks of code that perform a specific task
+    function greet(name){
+        return `Hello, ${name}!`;
+    }
+    function functionParameter(Function1 ,Function2 , Function3){
+        return Function1() + " " + Function2() + " " + Function3(); //retrning the functions
+    }
+
+    function returnSomeValue(){
+        return "This is a value";
+
+        console.log(value);
+        return returnSomeValue(); // This will cause a stack overflow because the function is calling itself indefinitely
+    }
+    
+    function returnParameter(parameter){
+        return parameter("Hello this is my parameter");
+    }
